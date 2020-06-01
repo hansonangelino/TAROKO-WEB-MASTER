@@ -117,13 +117,14 @@ a.nav_item:hover {
 }
 .product_title {
 	text-align: center;
+	margin-top: 48px;
 }
-/*.border {
+.border {
 	display: block;
 	position: absolute;
 	border: solid;
 	border-width: 100%;
-}*/
+}
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -229,12 +230,12 @@ a.nav_item:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
- 
 }
 .banner {
 	padding: 8px 48px;
 }
 .banner h1{
+	margin-top: 16px
 	font-size: 64px;
 	color: white;
 }
@@ -298,6 +299,9 @@ form .submit:hover{
 .about_desc {
 	flex: 1;
 }
+.about_desc p{
+	margin-top: 64px;
+}
 .about_desc .button{
 	margin-top: 64px;
 	float: left;
@@ -331,10 +335,15 @@ form .submit:hover{
 	border-color: #00953b;
 	transition: 0.25s;
 }
-
 .contact {
 	text-align: center;
 	margin: 48px;
+}
+.contact_title img{
+	width: 75%; 
+	padding: 48px 0; 
+	display: block; 
+	margin: 0 auto;
 }
 footer {
 	font-family: Segoe UI;
@@ -410,6 +419,10 @@ footer {
 	.nav_menu {
 		display: none;
 	}
+	.title_container {
+		text-align: center;
+		margin: 0 24px;
+	}
 	.like {
 		opacity: 0%;
 	}
@@ -418,7 +431,6 @@ footer {
 	}
 	.home_title p{
 		font-size: 4vw;
-		text-align: center;
 	}
 	.hero {
 		display: flex;
@@ -431,11 +443,14 @@ footer {
 		background-size: cover;
 	}
 	.cta {
-		margin-top: 32px;
+		margin-top: 8vw;
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 16px;
 	}
 	.cta a{
-		display: flex;
-		align-items: center;
+		height: 32px;
+		justify-content: center;
 		text-decoration: none;
 		color: white;
 		padding: 8px 32px;
@@ -444,11 +459,14 @@ footer {
 		transition: 0.25s;
 		letter-spacing: 1px;
 	}
+	.cta img{
+		display: none;
+	}
 	.gap {
 		display: none;
 	}
-	.product {
-
+	.product_title {
+		margin-top: 16px;
 	}
 	.product_title p{
 		margin: 16px;
@@ -460,7 +478,6 @@ footer {
 		align-items: center;
 		text-align: center;
 		padding: 16px;
-		padding-bottom: 24px;
 	}
 	.post {
 		display: block;
@@ -489,5 +506,173 @@ footer {
 		font-size: 16px;
 		border-color: #ff6101;
 		transition: 0.25s;
+	}
+	.button #order img{
+		height: 28px;
+	}
+	.subscription {
+		display: none;
+	}
+	.about {
+		text-align: center;
+		margin: 16px;
+		margin-top: 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.about_img {
+		flex: 1;
+		margin: 0 0 16px 0;
+		height: 16em;
+		background-image: url(about.jpg);
+		background-attachment: default;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 100% 55%;
+	}
+	.about_desc p{
+		margin: 0;
+	}
+	.about_desc .button{
+		margin-top: 24px;
+		float: none;
+		display: flex;
+	}
+	.button #learnmore{
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		margin-right: 8px;
+		background-color: white;
+		border: solid;
+		border-color: black;
+		transition: 0.25s;
+	}
+	.button #learnmore:hover{
+		background-color: black;
+		color: white;
+		transition: 0.25s;
+	}
+	.button #ourcontact{
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		background-color: #ff6101;
+		color: white;
+		border: solid;
+		border-color: #ff6101;
+		transition: 0.25s;
+	}
+	.button #ourcontact:hover{
+		background-color: #00953b;
+		border-color: #00953b;
+		transition: 0.25s;
+	}
+	.contact {
+		text-align: center;
+		margin: 16px;
+	}
+	.contact_title img{
+		width: 100%; 
+		padding: 16px 0; 
+		display: block;
+		margin: 0 auto;
+	}
+	.button #contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40%;
+		margin-right: 0px;
+		background-color: transparent;
+		padding: 8px 12px;
+		color: #ff6101;
+		border: solid;
+		border-color: #ff6101;
+		transition: 0.25s;
+		font-size: 20px;
+	}
+	.button #contact:hover{
+		background-color: #00953b;
+		border-color: #00953b;
+		color: white;
+		transition: 0.25s;
+	}
+	.button #message{
+		display: none;
+	}
+	footer {
+		font-family: Segoe UI;
+		display: grid;
+		color: white;
+		grid-template-columns: 1fr 1fr;
+		height: 120px;
+		background-color: #00953b;
+		font-size: 12px;
+	}
+	.head_sec {
+		font-size: 20px;
+		cursor: default;
+	}
+	.logo {
+		text-align: center;
+		margin: 8px;
+	}
+	.wrapper {
+		display: none;
+		margin: 8px;
+	}
+	.none {
+		display: none;
+	}
+	.guide a{
+		color: white;
+		display: block;
+		text-decoration: none;
+		margin: 2px 0;
+	}
+	.guide a:hover{
+		background-color: #ff6101;
+	}
+	.navigation a{
+		color: white;
+		display: block;
+		text-decoration: none;
+		margin: 2px 0;
+	}
+	.navigation a:hover{
+		background-color: #ff6101;
+	}
+
+	.followus {
+		display: block;
+		height: 28px;
+		margin: 4px 0;
+	}
+	.social {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		height: 100%;
+		width: 60%;
+		margin-top: 8px;
+	}
+	.social	img{
+		max-height: 100%;
+		max-width: 100%;
+		transition: 0.25s;
+	}
+	.social img:hover{
+		opacity: 50%;
+	}
+	.copyright {
+		position: relative;
+		margin: 16px 0px 0 0;
+	}
+	.copyright p{
+		cursor: not-allowed;
+		position: absolute;
+		bottom: 16px;
 	}
 }
