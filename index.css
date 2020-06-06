@@ -565,6 +565,9 @@ footer {
 	.contact_title h1{
 		font-size: 44px;
 	}
+	.contact_title img{
+		padding: 8px 0px 16px 0px;
+	}
 	.button #contact{
 		margin: 16px 0px 0px 0px;
 		display: flex;
